@@ -1,14 +1,10 @@
-<?php
-    session_start();
-    include("php/captcha.php");
-    $_SESSION['captcha'] = simple_php_captcha();
-?>
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>al-sahaba &#8211; Kulturzentrum</title>
-		<meta name="description" content="EXCEPTION – Responsive Business HTML Template">
+		<meta name="description" content="al-sahaba &#8211; Kulturzentrum">
 		<meta name="author" content="EXCEPTION">
 		
 		<!-- Mobile Meta -->
@@ -89,13 +85,13 @@
 								    <ul>
 								      <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a>
 								      </li>
-								      <li><a href="blog.html"><i class="fa fa-key"></i><span>Blog</span></a>
+								      <li class="selected"><a href="blog.html"><i class="fa fa-key"></i><span>Blog</span></a>
 								      </li>
 								      <li><a href="activity.html"><i class="fa fa-copy"></i><span>Activity</span></a>
 								      </li>
 									  <li><a href="galerry.html"><i class="fa fa-gift"></i><span>Galerie</span></a>
 									  </li>
-								      <li class="selected"><a href="contact.php"><i class="fa fa-suitcase"></i><span>Beratungsleistungen</span></a>
+								      <li><a href="contact.html"><i class="fa fa-suitcase"></i><span>Beratungsleistungen</span></a>
 								      </li>
 								     
 								     
@@ -116,59 +112,40 @@
 			
 			<!-- Content Start -->
 			<div id="contentWrapper">
-				<div class="sectionWrapper">
-				<div class="container">
-						<div class="row">
-			    			<div class="cell-6 contact-form fx" data-animate="fadeInLeft" id="contact">
-			    				<h3 class="block-head">konsultiere das Zentrum</h3>
-			    				<mark id="message"></mark>
-                                <form class="form-signin cform" method="post" action="php/contact.php" id="cform" autocomplete="on">
-			    					<div class="form-input">
-				    					<label>Name<span class="red">*</span></label>
-				    					<input type="text" name="name" id="name" required="required">
-			    					</div>
-			    					<div class="form-input">
-			    						<label>Email<span class="red">*</span></label>
-			    						<input name="email" type="email" id="email" required="required">
-			    					</div>
-			    					<div class="form-input">
-			    						<label>Message<span class="red">*</span></label>
-			    						<textarea name="message" cols="40" rows="7" id="messageTxt" spellcheck="true" required="required"></textarea>
-			    					</div>
-			    					
-			    					<div class="form-input">
-			    						<input id="submit" name="submit" type="submit" class="btn btn-large main-bg" value="Submit">
-			    					</div>
-
-			    				</form>
-			    			</div>
-			    			<div class="cell-6 contact-form fx" data-animate="fadeInLeft" id="contact">
-			    				<h3 class="block-head">Feedback senden</h3>
-			    				<mark id="message"></mark>
-                                <form class="form-signin cform" method="post" action="php/contact.php" id="cform" autocomplete="on">
-			    					<div class="form-input">
-				    					<label>Name<span class="red">*</span></label>
-				    					<input type="text" name="name" id="name" required="required">
-			    					</div>
-			    					
-			    					<div class="form-input">
-			    						<label>Phone</label>
-			    						<input name="phone" type="text" id="phone">			    						
-			    					</div>
-			    					<div class="form-input">
-			    						<label>Message<span class="red">*</span></label>
-			    						<textarea name="message" cols="40" rows="7" id="messageTxt" spellcheck="true" required="required"></textarea>
-			    					</div>
-			    					
-			    					<div class="form-input">
-			    						<input id="submit" name="submit" type="submit" class="btn btn-large main-bg" value="Submit">
-			    					</div>
-
-			    				</form>
-			    			</div>
+					<div class="sectionWrapper">
+							<div class="container">
+								<div class="row">
+                                    <div class="cell-10">
+                                        <div class="blog-posts">
+                                            <div class="post-item    " data-animate="fadeInLeft">
+                                                <div class="details-img" style="max-height: 250px; overflow: hidden">
+                                                    
+                                                    <img src="images/0011.jpg" style="width: 100%">
+                                                </div>
+                                                <article class="post-content">
+                                                    <div class="post-info-container">
+                                                        <h1 class="main-color">1- دورة تعليم اللغة العربية للاطفال 
+															</h1>
+                                                        
+                                                        
+                                                    </div>
+                                                    <p>
+                                                            <b>1. Shahadah oder Glaubensbekenntnis</b><br>
+                                                            "Nichts ist der Anbetung würdig außer Gott, und Muhammad ist Gottes Gesandter." Diese
+                                                            Glaubensbekundung nennt man die Schahadah, einen einfachen Satz, den alle Gläubigen aussprechen.
+                                                            Die Bedeutung dieser Bekundung ist der Glaube, dass der der einzige Zweck des Lebens darin besteht,
+                                                            Gott zu dienen und gehorsam zu sein, und dies wird erlangt durch die Befolgung der Lehren und
+                                                            Verhaltensweisen des letzten Propheten Muhammad.
+                                                    </p>
+                                                  
+                                                </article>
+                                            </div><!-- .post-item end -->
+                                            
+                                        </div>
+                                    </div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
 				
 			
 				
